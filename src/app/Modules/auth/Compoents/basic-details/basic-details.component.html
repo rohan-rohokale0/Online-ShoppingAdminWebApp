@@ -1,0 +1,139 @@
+<mat-card class="container-sm col-8">
+    <mat-card-title class="text-center">
+    <span class="header font-weight-normal">Basic Details</span>
+
+    </mat-card-title>
+    <form [formGroup]="addBasicDetailsForm">
+      <div class="row">
+        <div class="col-6">
+          <mat-form-field appearance="legacy">
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              placeholder="Name"
+              formControlName="Name" 
+              formControlName="Name"
+            />
+            <mat-error
+            *ngIf="addBasicDetailsForm.controls['Name']; hasError: 'error'"
+          >
+            <span
+              *ngIf="
+              addBasicDetailsForm.controls['Name'];
+                hasError: 'required'">
+              Please enter name</span
+            >
+          </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-6">
+          <mat-form-field appearance="legacy" >
+              <mat-label>Approve</mat-label>
+              <mat-select formControlName="Approve">
+                <mat-option value="Rohan">Rohan</mat-option>
+                <mat-option value="Sushant">Sushant</mat-option>  
+              </mat-select>
+              <mat-error
+              *ngIf="addBasicDetailsForm.controls['Approve']; hasError: 'error'"
+            >
+              <span
+                *ngIf="
+                addBasicDetailsForm.controls['Approve'];
+                  hasError: 'required'">
+                Please select approve</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-6">
+          <mat-form-field appearance="legacy">
+              <mat-label>Project</mat-label>
+              <mat-select  formControlName="projectName">
+                
+                <mat-option value="SRk">SRk</mat-option>
+                <mat-option value="Ever Expanse">Ever Expanse</mat-option>
+              </mat-select>
+              <mat-error
+              *ngIf="addBasicDetailsForm.controls['projectName']; hasError: 'error'"
+            >
+              <span
+                *ngIf="
+                addBasicDetailsForm.controls['projectName'];
+                  hasError: 'required'">
+                Please select project name</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-6">
+          <mat-form-field appearance="legacy">
+              <mat-label>Role On Project</mat-label>
+              <mat-select formControlName="roleAndProject">
+                <mat-option value="Softwer Devloper">Softwer Devloper</mat-option>
+                <mat-option value="Testing">Testing</mat-option>
+                <mat-option value="Team Lead">Team Lead</mat-option>
+              </mat-select>
+              <mat-error
+              *ngIf="addBasicDetailsForm.controls['roleAndProject']; hasError: 'error'"
+            >
+              <span
+                *ngIf="
+                addBasicDetailsForm.controls['roleAndProject'];
+                  hasError: 'required'">
+                Please select role project on project</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-6">
+          <mat-form-field appearance="legacy">
+              <mat-label>Department</mat-label>
+              <mat-select  formControlName="department">
+                <mat-option>None</mat-option>
+                <mat-option value="hr">hr</mat-option>
+                <mat-option value="Admin">Admin</mat-option>
+              </mat-select>
+              <mat-error
+              *ngIf="addBasicDetailsForm.controls['department']; hasError: 'error'"
+            >
+              <span
+                *ngIf="
+                addBasicDetailsForm.controls['department'];
+                  hasError: 'required'">
+                Please select department</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-6">
+          <mat-form-field appearance="legacy">
+              <mat-label>Reporting Name</mat-label>
+              <mat-select  formControlName="reportingName">
+                
+                <mat-option value="Smita">Smita</mat-option>
+                <mat-option value="Dhanashree">Dhanashree</mat-option>
+              </mat-select>
+              <mat-error
+              *ngIf="addBasicDetailsForm.controls['reportingName']; hasError: 'error'"
+            >
+              <span
+                *ngIf="
+                addBasicDetailsForm.controls['reportingName'];
+                  hasError: 'required'">
+                Please select reporting name</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col">
+        <div class="text-end">
+        <button class="float-right" mat-raised-button color="warn">Cancel</button>&nbsp;
+        <button class="float-right"  [disabled]="addBasicDetailsForm.invalid" mat-raised-button color="primary" (click)="save()">Save</button>
+      </div>
+    </div>
+    </div>
+  </mat-card>
+  

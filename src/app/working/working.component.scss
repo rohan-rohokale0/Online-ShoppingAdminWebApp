@@ -1,0 +1,150 @@
+.content {
+  height: calc(100vh - 90px);
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 12px;
+  // padding: 16px;
+  overflow: auto;
+}
+
+:host {
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+}
+
+.mat-divider {
+  border-top-width: 2px;
+  border-color: white;
+}
+.mat-list-item {
+  color: #111111 !important;
+  font-size: 0.8rem;
+  height: 42px !important;
+  margin-bottom: 4px;
+  &:hover {
+    color: #f2f5f7 !important;
+  }
+  ::ng-deep {
+    .mat-list-item-content {
+      border-radius: 5px;
+      margin: 0 8px;
+      &:hover {
+        background: #ceced0 !important;
+      }
+    }
+  }
+}
+
+.active {
+  color: #111111 !important;
+  ::ng-deep {
+    .mat-list-item-content {
+      background: #8d8e8f !important;
+      &:hover {
+        background: #5e6064 !important;
+      }
+    }
+  }
+}
+
+.mat-subheader {
+  color: #111111;
+  font-size: 0.6rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer {
+  width: 260px;
+}
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-drawer {
+  background: #fff;
+}
+
+.mat-profile-name {
+  color: #f1eeee;
+  font-size: 11px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.mat-stroked-button {
+  border: none;
+}
+
+.toolbar-item-spacer {
+  flex: 1 1 auto;
+}
+
+.app-container {
+  height: 90%;
+  margin: 0;
+}  
+.app-sidenav {
+  width: 230px;
+}
+.app-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+} 
+
+.example-container {
+  height: 538px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.example-sidenav {
+   user-select: none;
+}
+.full-width {
+  width: 100%;
+}
+.menu-button {
+  transition: 300ms ease-in-out;
+  transform: rotate(0deg);
+}
+.menu-button.rotated {
+  transform: rotate(180deg);
+}
+.submenu {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding-left: 40px;
+}
+.submenu.expanded {
+  transform: scaleY(1);
+}
+.mat-drawer-content {
+  height: 0px !important;
+}
