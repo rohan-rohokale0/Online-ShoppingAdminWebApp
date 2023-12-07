@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-   
+
   },
   {
     path: 'product',
@@ -33,7 +33,7 @@ const routes: Routes = [
       {
         path: '',
         component: ProductListComponent,
-        canActivate: [AuthGuard]
+        //canActivate: [AuthGuard]
       },
     ],
   },
@@ -42,7 +42,7 @@ const routes: Routes = [
   children:[
     {
       path:'',component:CategoryListComponent,
-      
+
     },
   ]
 },
@@ -50,7 +50,7 @@ const routes: Routes = [
   path:'orders',children:[
     {
       path:'',component:OrdersComponent,
-      canActivate: [AuthGuard]
+      //canActivate: [AuthGuard]
     }
   ]
 },
@@ -58,7 +58,7 @@ const routes: Routes = [
   path:'customers',children:[
     {
       path:'',component:CustomersComponent,
-      canActivate: [AuthGuard]
+      //canActivate: [AuthGuard]
     }
   ]
 },
@@ -66,7 +66,7 @@ const routes: Routes = [
   path:'transactions',children:[
     {
       path:'',component:TransactionsComponent,
-      canActivate: [AuthGuard]
+      //canActivate: [AuthGuard]
     }
   ]
 },
@@ -74,7 +74,7 @@ const routes: Routes = [
   path:'reviews',children:[
     {
       path:'',component:RevievsComponent,
-      canActivate: [AuthGuard]
+      //canActivate: [AuthGuard]
     }
   ]
 }

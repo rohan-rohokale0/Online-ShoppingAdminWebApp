@@ -8,8 +8,8 @@
       <a mat-list-item routerLink="/admin/dashboard">
         <mat-icon>dashboard</mat-icon> Dashbaord
       </a>
-  
-   
+
+
     </mat-nav-list>
   </mat-drawer>
   <mat-drawer-content>
@@ -80,17 +80,17 @@
 	<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
     <mat-nav-list>
   		<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" routerLinkActive="active" routerLink="/admin/dashboard">
-        <mat-icon mat-list-icon>dashboard</mat-icon> 
+        <mat-icon mat-list-icon>dashboard</mat-icon>
         <span class="full-width" *ngIf="isExpanded || isShowing">Dashbaord</span>
 			</mat-list-item>
     </mat-nav-list>
 
-    
+
     <mat-nav-list>
 
       <mat-nav-list>
         <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" routerLinkActive="active" routerLink="/admin/category">
-        
+
           <mat-icon mat-list-icon> category</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing">Category</span>
         </mat-list-item>
@@ -98,25 +98,25 @@
 
       <mat-nav-list>
         <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" routerLinkActive="active" routerLink="/admin/product">
-        
-          <mat-icon mat-list-icon>Product</mat-icon> 
+
+          <mat-icon mat-list-icon>Product</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing">Product</span>
         </mat-list-item>
       </mat-nav-list>
 
       <mat-nav-list>
         <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" routerLinkActive="active" routerLink="/admin/orders">
-        
-          <mat-icon mat-list-icon>Orders</mat-icon> 
+
+          <mat-icon mat-list-icon>Orders</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing">Orders</span>
         </mat-list-item>
       </mat-nav-list>
-  
+
 
       <mat-nav-list>
         <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" routerLinkActive="active" routerLink="/admin/customers">
-        
-          <mat-icon mat-list-icon>Customers</mat-icon> 
+
+          <mat-icon mat-list-icon>Customers</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing">Customers</span>
         </mat-list-item>
       </mat-nav-list>
@@ -124,23 +124,23 @@
 
       <mat-nav-list>
         <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" routerLinkActive="active" routerLink="/admin/reviews">
-        
-          <mat-icon mat-list-icon>Reviews</mat-icon> 
+
+          <mat-icon mat-list-icon>Reviews</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing">Reviews</span>
         </mat-list-item>
       </mat-nav-list>
 
 
-      
+
       <mat-nav-list>
         <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" routerLinkActive="active" routerLink="/admin/transactions">
-      
-          <mat-icon mat-list-icon>Transactions</mat-icon> 
+
+          <mat-icon mat-list-icon>Transactions</mat-icon>
           <span class="full-width" *ngIf="isExpanded || isShowing">Transactions</span>
         </mat-list-item>
       </mat-nav-list>
-  
-      
+
+
 
 </mat-nav-list>
 	</mat-sidenav>
