@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
@@ -16,8 +16,11 @@ import { AddCategoryComponent } from '../add-category/add-category.component';
   styleUrls: ['./category-list.component.scss'],
 })
 export class CategoryListComponent implements OnInit {
+  @ViewChild('addcatogery') callAPIDialog: TemplateRef<any>;
+  constructor(private dialog: MatDialog) {
+  }
   ngOnInit(): void {
-    
+
   }
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
@@ -30,6 +33,14 @@ export class CategoryListComponent implements OnInit {
   workingFine()
   {
     debugger
+  }
+  openDialog(templateRef: TemplateRef<any>) {
+
+    this.dialog.open(templateRef, {
+      height: '400px',
+      width: '800px'
+    });
+
   }
 }
 

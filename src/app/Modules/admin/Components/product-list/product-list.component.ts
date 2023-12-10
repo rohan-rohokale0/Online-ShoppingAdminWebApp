@@ -51,9 +51,9 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'anup', position: 1, category: 'QA Engineer', subcategory: 'Tester',price: 12,Discount:12,fprice:12},
-  {name: 'vikas', position: 2, category: 'QA Engineer', subcategory: 'Tester',price: 12,Discount:12,fprice:12},
-  {name: 'rohan', position: 3, category: 'QA Engineer', subcategory: 'Tester',price: 12,Discount:12,fprice:12},
-  {name: 'rishikesh', position: 4, category: 'QA Engineer', subcategory: 'Tester',price: 12,Discount:12,fprice:12},
-  {name: 'palash', position: 5, category: 'QA Engineer', subcategory: 'Tester',price: 12,Discount:12,fprice:12},
+  {name: 'Product A', position: 1, category: 'Electronics', subcategory: 'Smartphones',price: 500,Discount:10,fprice:450},
+  {name: 'Product B', position: 2, category: 'Clothing', subcategory: 'Shirts',price: 350,Discount:20,fprice:330},
+  {name: 'Product D', position: 3, category: 'Books', subcategory: 'Fiction',price: 110,Discount:7,fprice:103},
+  {name: 'Product E', position: 4, category: 'Beauty', subcategory: 'Skincare',price: 1222,Discount:19,fprice:1203},
+  {name: 'Product F ', position: 5, category: 'Furniture', subcategory: 'Chairs',price: 499,Discount:0,fprice:499},
 ];
